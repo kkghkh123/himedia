@@ -1,0 +1,16 @@
+
+#Skip{}
+#Skip a{
+    position: absolute;
+    left: 10px;
+    top: -100px;
+    z-index: 10000;
+    font-size: 1rem;
+    padding: 10px 30px;
+    color: var(--white);
+    background-color: var(--black);
+}
+#Skip a:focus,
+#Skip a:active{
+    top: 10px;
+}
