@@ -21,7 +21,7 @@
         }
     }
     .header_nav{
-        @media(max-width:800px){
+        @media(max-width:960px){
             display: none;
 
             &.show{
@@ -35,7 +35,6 @@
                     backdrop-filter: blur(15px);
                     background-color: rgba(16,99,99,0.1);
                     padding: 20px 0;
-                    z-index: 10000;
 
                     li{
                         display: block;
@@ -89,7 +88,7 @@
         height: 40px;
         cursor: pointer;
         
-        @media(max-width:800px){
+        @media(max-width:960px){
             display: block;
         }
 
@@ -109,6 +108,7 @@
                 position: absolute;
                 right: 0;
                 top: 6px;
+                transition: width 0.3s;
             }
             &::after{
                 content: "";
@@ -118,6 +118,7 @@
                 position: absolute;
                 left: 0;
                 bottom: 6px;
+                transition: width 0.3s;
             }
         }
     }
