@@ -20,10 +20,6 @@ const headerNav=[
     title : "contact",
     url:"#contact",
   },
-  {
-    title : "이쁜김수",
-    url:"이쁜김수",
-  },
 ]
 
 const Header = () => {
