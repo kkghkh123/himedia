@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+#footer{
+    font-family: var(--mainKor-font);
+}
+.footer__inner{
+    font-size: 16px;
+    padding: 16px;
+
+    .footer__text{
+        font-size: 12px;
+        text-transform: uppercase;
+        border-top: 1px solid var(--black);
+        border-bottom: 1px solid var(--black);
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+    .footer__info{
+        display: flex;
+        justify-content: space-between;
+        margin: 100px 0;
+
+        @media(max-width:960px){flex-direction: column;}
+        
+        .left{
+            width: 40%;
+
+            @media(max-width:960px){width: 100%;}
+
+            .title{
+                border-top: 2px solid var(--black);
+                border-bottom: 2px solid var(--black);
+                padding: 20px 0;
+                text-transform: uppercase;
+                font-weight: 700;
+                background: url(../../img/arrow.svg) no-repeat right 20px;
+                transition: all 0.3s;
+
+                &:hover{
+                    font-weight: 900;
+                    padding-left: 50px;
+                }
+            }
+            .desc{
+                font-size: 12px;
+                padding: 20px;
+
+                @media(max-width:960px){margin-bottom: 40px;}
+            }
+        }
+        .right{
+            width: 50%;
+            @media(max-width:960px){width: 100%;}
+
+            h3{
+                border-top: 2px solid var(--black);
+                font-size: 10px;
+                margin-bottom: 40px;
+                padding-top: 10px;
+            }
+            ul{
+                border-top: 1px solid var(--black);
+                li{
+                    border-bottom: 1px solid var(--black);
+                    cursor: pointer;
+
+                    &:hover em{opacity: 1;}
+
+                    a{
+                        display: inline-block;
+                        padding: 14px 0;
+                        word-spacing: nowrap;
+                    }
+                    em{
+                        font-size: 12px;
+                        padding-left: 15px;
+                        opacity: 0;
+                        transition: opacity 0.3s;
+                        color: var(--black200);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__right{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}
